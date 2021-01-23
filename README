@@ -1,0 +1,23 @@
+The project implements a deck of cards, with a set of required functions, such as draw a card, shuffle, and sort.
+It contains a minimal simulation of a card game with two players drawing from a shuffled deck.
+
+cards_game.py contains definitions of Deck and Card classes. The Deck class implements shuffle(), get_card(),
+and sort() functions. Drawing a card from an empty deck results in IndexError exception.
+
+Main available functions to run:
+
+python cards_game.py
+This will run play_game() that simulates the scenario of 2 players, drawing by turn 3 cards, with the winner
+determined by the score of each player's cards. The score is calculated as the sum of suit point number * rank number
+
+python test_cards_game.py
+Run all available tests
+
+test_cards_game.py includes the test for sorting a deck of
+(Spades, 2), (Diamonds, 5), (Spades, King), (Hearts, 3), (Clubs, Ace)
+
+into
+(Spades, 2), (Spades, King), (Diamonds, 5), (Hearts, 3), (Clubs, Ace)
+
+
+This project was tested with python 3.6.8
